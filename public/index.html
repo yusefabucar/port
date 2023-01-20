@@ -1,43 +1,1205 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#000000" />
-    <meta
-      name="description"
-      content="Web site created using create-react-app"
-    />
-    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
-    <!--
-      manifest.json provides metadata used when your web app is installed on a
-      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
-    -->
-    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-    <!--
-      Notice the use of %PUBLIC_URL% in the tags above.
-      It will be replaced with the URL of the `public` folder during the build.
-      Only files inside the `public` folder can be referenced from the HTML.
+<html class="no-js ss-preload" lang="en">
 
-      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
-      work correctly both with client-side routing and a non-root public URL.
-      Learn how to configure a non-root public URL by running `npm run build`.
-    -->
-    <title>React App</title>
-  </head>
-  <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root"></div>
-    <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
+<head>
 
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
+    <!--- basic page needs
+    ================================================== -->
+    <meta charset="utf-8">
+    <title>Yusef Abucar.com</title>
+    <meta name="description" content="">
+    <meta name="author" content="">
 
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
-  </body>
+    <!-- mobile specific metas
+    ================================================== -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- CSS
+    ================================================== -->
+    <link rel="stylesheet" href="css/vendor.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.7/css/all.css">
+    <!-- favicons
+    ================================================== -->
+    <link rel="apple-touch-icon" sizes="180x180" href="./favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon.ico">
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon.ico">
+    <link rel="manifest" href="site.webmanifest">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-215971943-1">
+    </script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-215971943-1');
+    </script>
+</head>
+
+<body id="top">
+
+
+    <!-- # preloader
+    ================================================== -->
+    <div id="preloader">
+        <div id="loader">
+        </div>
+    </div>
+
+
+    <!-- # page wrap
+    ================================================== -->
+    <div class="s-pagewrap">
+
+        <div class="circles">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+
+        <!-- ## site header 
+        ================================================== -->
+        <header class="s-header">
+
+            <div class="header-mobile">
+                <span class="mobile-home-link"><a href="index.html">Yusef</a></span>
+                <a class="mobile-menu-toggle" href="#0"><span>Menu</span></a>
+            </div>
+
+            <div class="row wide main-nav-wrap">
+                <nav class="column lg-12 main-nav">
+                    <ul>
+                        <li><a href="index.html" class="home-link">Yusef</a></li>
+                        <li class="current"><a href="#intro" class="smoothscroll">Intro</a></li>
+                        <li><a href="#about" class="smoothscroll">About</a></li>
+                        <li><a href="#works" class="smoothscroll">Projects</a></li>
+                        <!-- <li><a href="#testimonials" class="smoothscroll">Testimonials</a></li> -->
+                        <li><a href="#contact" class="smoothscroll">Contact Me
+                            </a></li>
+                    </ul>
+                </nav>
+            </div>
+
+        </header> <!-- end s-header -->
+
+
+        <!-- ## main content
+        ==================================================- -->
+        <main class="s-content">
+
+
+            <!-- ### intro
+            ================================================== -->
+            <section id="intro" class="s-intro target-section">
+
+                <div class="row intro-content wide">
+
+                    <div class="column">
+                        <div class="text-pretitle with-line">
+                            Hello World!
+                        </div>
+
+                        <h1 class="text-huge-title">
+                            Hey, I'm Yusef <br>
+                            a 3D artist, <br>
+                            graphic designer, <br>
+                            & full-stack software developer!
+                            <br>
+                        </h1>
+                    </div>
+
+                    <ul class="intro-social">
+                        <li><a href="https://www.linkedin.com/in/yusefabucar">LinkedIn</a></li>
+                        <li><a href="https://www.github.com/yusefabucar">Github</a></li>
+                        <li><a href="https://www.deviantart.com/cynicalproductions/">DeviantArt</a></li>
+                        <li><a href="https://www.artstation.com/">Artstation</a></li>
+                        <li><a href="https://instagram.com/official_cynicalproductions">Instagram</a></li>
+                        <!-- <li><a href="https://soundcloud.com/lanaremix">Soundcloud</a></li> -->
+                        <li><a href="mailto:@yusefabucar@gmail.com">Gmail</a></li>
+                        <li><a href="https://www.youtube.com/channel/UCV_mxuk4PzkAzdCndjwnt7A">YouTube</a></li>
+                        <li><a href="https://sketchfab.com/sinnik">Sketchfab</a></li>
+                        <li><a href="https://www.facebook.com/yusefabucar">Facebook</a></li>
+                    </ul>
+                </div>
+                <a href="#about" class="intro-scrolldown smoothscroll">About</a>
+                    <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"
+                        fill-rule="evenodd" clip-rule="evenodd">
+                        <path
+                            d="M11 21.883l-6.235-7.527-.765.644 7.521 9 7.479-9-.764-.645-6.236 7.529v-21.884h-1v21.883z" />
+                    </svg>
+                </a>
+            </section> <!-- end s-intro -->
+
+
+            <!-- ### about
+            ================================================== -->
+            <section id="about" class="s-about target-section">
+
+
+                <div class="row about-info wide" data-animate-block>
+
+                    <div class="column lg-6 md-12 about-info__pic-block">
+                        <img src="images/avatars/profpic3.jpg"
+                            srcset="images/avatars/profpic3.jpg 1x, images/avatars/profpic3.jpg 2x" alt="selfie"
+                            class="about-info__pic" data-animate-el>
+                    </div>
+
+                    <div class="column lg-6 md-12">
+                        <div class="about-info__text">
+
+                            <h2 class="text-pretitle with-line" data-animate-el>
+                                About
+                            </h2>
+                            <p class="attention-getter" data-animate-el>
+                                I'm a visual/graphic artist and musician who grew up with technology, so making the leap
+                                to full stack software engineer was a no-brainer. Specializing in the MERN stack, I
+                                bring an "outside-the-box" creative viewpoint to any project for a fresh, much needed
+                                alternative perspective. I studied at General Assembly working on projects
+                                solo and with a small development team. While I have learned a lot, I know more that I
+                                have much to learn and look forward to being a life-long student.
+                            </p>
+                            <a href="Yusef_Abucar_Resume.PDF" class="btn btn--medium u-fullwidth"
+                                data-animate-el>Download CV (.pdf)</a>
+                            <a href="Yusef_Abucar_Resume.DOCX" class="btn btn--medium u-fullwidth"
+                                data-animate-el>Download CV (.docx)</a>
+
+                        </div>
+                    </div>
+                    <div class="row about-expertise" data-animate-block>
+                        <div class="column lg-12">
+
+                            <h2 class="text-pretitle" data-animate-el>Expertise</h2>
+
+                            <ul class="skills-list h1" data-animate-el>
+                                <li>Front-End Web Development</li>
+                                <li>React.js</li>
+                                <li>Full-Stack Web Apps</li>
+                                <li>Digital Design and Graphics</li>
+                                <li>Product/Branding Mockup</li>
+                                <li>Illustration</li>
+                                <li>3D Modeling</li>
+                            </ul>
+
+                        </div>
+                    </div> <!-- end about-expertise -->
+
+
+                    <div class="row about-timelines" data-animate-block>
+
+                        <div class="column lg-6 tab-12">
+
+                            <h2 class="text-pretitle" data-animate-el>
+                                Experience
+                            </h2>
+
+                            <div class="timeline" data-animate-el>
+
+                                <div class="timeline__block">
+                                    <div class="timeline__bullet"></div>
+                                    <div class="timeline__header">
+                                        <h4 class="timeline__title">YouTube</h3>
+                                            <h5 class="timeline__meta">Channel Production and Development</h5>
+                                            <p class="timeline__timeframe">August 2015 - Present</p>
+                                    </div>
+                                    <div class="timeline__desc">
+                                        <p>I've worked on a <strong>wide</strong> variety of projects for various
+                                            channels spanning the spectrum across all genres and sizes. Projects ranged
+                                            from simple digital ad
+                                            banners to full-fledged music videos with original music and footage. A few
+                                            notable YouTube brands I've completed projects for: TJ Kirk, The Amazing
+                                            Atheist, The Drunken Peasants Podcast, SINNIK, among others. Other project
+                                            work I've completed on a much smaller scale includes creator channel assets
+                                            and marketing materials (banners, end-cards, thumbnails, logos, etc.).
+                                            designs.</p>
+                                    </div>
+                                </div>
+
+                                <div class="timeline__block">
+                                    <div class="timeline__bullet"></div>
+                                    <div class="timeline__header">
+                                        <h4 class="timeline__title">Self employed</h4>
+                                        <h5 class="timeline__meta">Music Producer and Composer</h5>
+                                        <p class="timeline__timeframe">July 2019 - Present</p>
+                                    </div>
+                                    <div class="timeline__desc">
+                                        <p>What started long ago as a hobby suprisingly turned into a money making
+                                            opportunity when Soundcloud invitied me into their multiplatform
+                                            distribution program (monetarily based on total global views per month). I
+                                            dont make anywhere
+                                            <strong>near</strong> a fortune from it, but to earn ANY money from a such a
+                                            fundamental
+                                            lifelong passion such this is still mindblowing to me! My tracks are featured and monetized on all major digital music platforms, including YouTube Music, Apple Music,
+                                            Spotify, Amazon Music, and Pandora </p>
+                                            </div>
+                                  </div>
+                               <div class="timeline__block"> 
+                                        <div class="timeline__bullet"></div>
+                                        <div class="timeline__header">
+                                            <h4 class="timeline__title">Creative Director</h4>
+                                            <h5 class="timeline__meta">STEditor.com</h5>
+                                            <p class="timeline__timeframe">April 2022 - December 2023</p>
+                                        </div>
+                                        <div class="timeline__desc">
+                                            <p>As my first "big boy job" this position requires quick and efficient website contruction, using primarily the in-house website-builder (drag and drop style). Another large aspect
+                                                of this job is direct sales, as it was a small business operated mainly by me and two other individuals. As perfect as the job seemed at the time, I wasn't able to flex my creative
+                                                muscles, and a lot of time ended up wasted because of lack of sales, among other things. However, in the processl, I learned many valuable lessons. The startup recently
+                                                went out of business (lack of capitol), so I'm currently seeking full time software development employment. </p>
+                                        </div>
+                                </div>
+
+                            </div> <!-- end timeline -->
+
+                        </div> <!-- end column -->
+
+                        <div class="column lg-6 tab-12">
+
+                            <h2 class="text-pretitle" data-animate-el>
+                                Education
+                            </h2>
+
+                            <div class="timeline" data-animate-el>
+
+                                <div class="timeline__block">
+                                    <div class="timeline__bullet"></div>
+                                    <div class="timeline__header">
+                                        <h4 class="timeline__title">General Assembly</h3>
+                                            <h5 class="timeline__meta">Full Stack Web Development</h5>
+                                            <p class="timeline__timeframe">January 2022</p>
+                                    </div>
+                                    <div class="timeline__desc">
+                                        <p>Full time fellow in the Software Engineering Immersive program that includes
+                                            over 400 hours of professional training over 12 weeks. Utilizes hands-on
+                                            approach to design and build web applications with full CRUD functionality
+                                            through Javascript, React, Express, SQL, PostgreSQL, HTML, CSS, Ruby, Rails,
+                                            and Sequelize.</p>
+                                    </div>
+                                </div>
+                                <div class="timeline__block">
+                                    <div class="timeline__bullet"></div>
+                                    <div class="timeline__header">
+                                        <h4 class="timeline__title">THE Ohio State University</h4>
+                                        <h5 class="timeline__meta">Bachelors Degree, Graphic Design </h5>
+                                        <p class="timeline__timeframe">January 2018</p>
+                                    </div>
+                                    <div class="timeline__desc">
+                                        <p>I further sharpened my technical knowledge on Adobe products, as well as learning the fundamentals
+                                            of 3D modeling and rendering. Concentrated and specialized in logo design and brand mockup, among other things.
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div class="timeline__block">
+                                    <div class="timeline__bullet"></div>
+                                    <div class="timeline__header">
+                                        <h4 class="timeline__title">Columbus State Community College</h4>
+                                        <h5 class="timeline__meta">Associates Degree in Digital Design and Graphics</h5>
+                                        <p class="timeline__timeframe">August 2015</p>
+                                    </div>
+                                    <div class="timeline__desc">
+                                        <p>I learned everything Adobe, from Photoshop and Illustrator to InDesign and After Effects,
+                                            as well as video editing and special effects in Premier Pro. My field of study included
+                                            various digital and traditional marketing classes, as well as more technical
+                                            freehand art classes like storyboarding and illustration. </p>
+                                    </div>
+                                </div>
+
+                            </div> <!-- end timeline -->
+
+                        </div> <!-- end column -->
+
+
+                    </div> <!-- end about-timelines -->
+
+            </section> <!-- end s-about -->
+
+
+            <!-- ### works
+            ================================================== -->
+            <section id="works" class="s-works target-section">
+
+
+                <div class="row works-portfolio">
+
+                    <div class="column lg-12" data-animate-block>
+
+                        <h2 class="text-pretitle" data-animate-el>
+                            Recent Work
+                        </h2>
+                        <p class="h1" data-animate-el>
+                            Here are some of my recent projects. Check back often as they are updated frequently!
+                        </p>
+
+                        <ul class="folio-list row block-lg-one-half block-stack-on-1000">
+
+                            <li class="folio-list__item column" data-animate-el>
+                                <a class="folio-list__item-link" href="#modal-01">
+                                    <div class="folio-list__item-pic">
+                                        <img src="images/resume1.jpg"
+                                            srcset="images/resume1.jpg 1x, images/resume1.jpg 2x" alt="meme">
+                                    </div>
+
+                                    <div class="folio-list__item-text">
+                                        <div class="folio-list__item-cat">
+                                            First. Website. Ever.
+                                        </div>
+                                        <div class="folio-list__item-title">
+                                            Memerator<strong> Deluxe</strong>
+                                        </div>
+                                    </div>
+                                </a>
+                                <a class="folio-list__proj-link" href="#" title="project link">
+                                    <svg width="15" height="15" viewBox="0 0 15 15" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M8.14645 3.14645C8.34171 2.95118 8.65829 2.95118 8.85355 3.14645L12.8536 7.14645C13.0488 7.34171 13.0488 7.65829 12.8536 7.85355L8.85355 11.8536C8.65829 12.0488 8.34171 12.0488 8.14645 11.8536C7.95118 11.6583 7.95118 11.3417 8.14645 11.1464L11.2929 8H2.5C2.22386 8 2 7.77614 2 7.5C2 7.22386 2.22386 7 2.5 7H11.2929L8.14645 3.85355C7.95118 3.65829 7.95118 3.34171 8.14645 3.14645Z"
+                                            fill="currentColor" fill-rule="evenodd" clip-rule="evenodd"></path>
+                                    </svg>
+                                </a>
+                            </li>
+                            <!--end folio-list__item -->
+
+                            <li class="folio-list__item column" data-animate-el>
+                                <a class="folio-list__item-link" href="#modal-02">
+                                    <div class="folio-list__item-pic">
+                                        <img src="images/BACKGR.jpg" srcset="images/BACKGR.jpg 1x, images/BACKGR.jpg 2x"
+                                            alt="">
+                                    </div>
+
+                                    <div class="folio-list__item-text">
+                                        <div class="folio-list__item-cat">
+                                            Class Project
+                                        </div>
+                                        <div class="folio-list__item-title">
+                                            TUNEage
+                                        </div>
+                                    </div>
+                                </a>
+                                <a class="folio-list__proj-link" href="#" title="project link">
+                                    <svg width="15" height="15" viewBox="0 0 15 15" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M8.14645 3.14645C8.34171 2.95118 8.65829 2.95118 8.85355 3.14645L12.8536 7.14645C13.0488 7.34171 13.0488 7.65829 12.8536 7.85355L8.85355 11.8536C8.65829 12.0488 8.34171 12.0488 8.14645 11.8536C7.95118 11.6583 7.95118 11.3417 8.14645 11.1464L11.2929 8H2.5C2.22386 8 2 7.77614 2 7.5C2 7.22386 2.22386 7 2.5 7H11.2929L8.14645 3.85355C7.95118 3.65829 7.95118 3.34171 8.14645 3.14645Z"
+                                            fill="currentColor" fill-rule="evenodd" clip-rule="evenodd"></path>
+                                    </svg>
+                                </a>
+                            </li>
+                            <!--end folio-list__item -->
+
+                            <li class="folio-list__item column" data-animate-el>
+                                <a class="folio-list__item-link" href="#modal-03">
+                                    <div class="folio-list__item-pic">
+                                        <img src="images/articlr.jpg"
+                                            srcset="images/articlr.jpg 1x, images/articlr.jpg 2x" alt="">
+                                    </div>
+
+                                    <div class="folio-list__item-text">
+                                        <div class="folio-list__item-cat">
+                                            Class Project - Blog Website
+                                        </div>
+                                        <div class="folio-list__item-title">
+                                            Articlr
+                                        </div>
+                                    </div>
+                                </a>
+                                <a class="folio-list__proj-link" href="#" title="project link">
+                                    <svg width="15" height="15" viewBox="0 0 15 15" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M8.14645 3.14645C8.34171 2.95118 8.65829 2.95118 8.85355 3.14645L12.8536 7.14645C13.0488 7.34171 13.0488 7.65829 12.8536 7.85355L8.85355 11.8536C8.65829 12.0488 8.34171 12.0488 8.14645 11.8536C7.95118 11.6583 7.95118 11.3417 8.14645 11.1464L11.2929 8H2.5C2.22386 8 2 7.77614 2 7.5C2 7.22386 2.22386 7 2.5 7H11.2929L8.14645 3.85355C7.95118 3.65829 7.95118 3.34171 8.14645 3.14645Z"
+                                            fill="currentColor" fill-rule="evenodd" clip-rule="evenodd"></path>
+                                    </svg>
+                                </a>
+                            </li>
+                            <!--end folio-list__item -->
+
+                            <li class="folio-list__item column" data-animate-el>
+                                <a class="folio-list__item-link" href="#modal-04">
+                                    <div class="folio-list__item-pic">
+                                        <img src="images/sinnik-gold.jpg"
+                                            srcset="images/sinnik-gold.jpg 1x, images/sinnik-gold.jpg 2x" alt="">
+                                    </div>
+
+                                    <div class="folio-list__item-text">
+                                        <div class="folio-list__item-cat">
+                                            Logo Gallery
+                                        </div>
+                                        <div class="folio-list__item-title">
+                                            SINNIK
+                                        </div>
+                                    </div>
+                                </a>
+                                <a class="folio-list__proj-link" href="https://sinnik-gallery.herokuapp.com"
+                                    title="project link">
+                                    <svg width="15" height="15" viewBox="0 0 15 15" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M8.14645 3.14645C8.34171 2.95118 8.65829 2.95118 8.85355 3.14645L12.8536 7.14645C13.0488 7.34171 13.0488 7.65829 12.8536 7.85355L8.85355 11.8536C8.65829 12.0488 8.34171 12.0488 8.14645 11.8536C7.95118 11.6583 7.95118 11.3417 8.14645 11.1464L11.2929 8H2.5C2.22386 8 2 7.77614 2 7.5C2 7.22386 2.22386 7 2.5 7H11.2929L8.14645 3.85355C7.95118 3.65829 7.95118 3.34171 8.14645 3.14645Z"
+                                            fill="currentColor" fill-rule="evenodd" clip-rule="evenodd"></path>
+                                    </svg>
+                                </a>
+                            </li>
+                            <!--end folio-list__item -->
+
+                            <li class="folio-list__item column" data-animate-el>
+                                <a class="folio-list__item-link" href="#modal-05">
+                                    <div class="folio-list__item-pic">
+                                        <img src="images/thumb3.png"
+                                            srcset="images/thumb3.png 1x, images/litlogos.png 2x" alt="alt">
+                                    </div>
+
+                                    <div class="folio-list__item-text">
+                                        <div class="folio-list__item-cat">
+                                            Quiz - Who Wants to be a Trillionaire?
+                                        </div>
+                                        <div class="folio-list__item-title">
+                                            Class Project
+                                        </div>
+                                    </div>
+                                </a>
+                                <a class="folio-list__proj-link" href="#" title="project link">
+                                    <svg width="15" height="15" viewBox="0 0 15 15" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M8.14645 3.14645C8.34171 2.95118 8.65829 2.95118 8.85355 3.14645L12.8536 7.14645C13.0488 7.34171 13.0488 7.65829 12.8536 7.85355L8.85355 11.8536C8.65829 12.0488 8.34171 12.0488 8.14645 11.8536C7.95118 11.6583 7.95118 11.3417 8.14645 11.1464L11.2929 8H2.5C2.22386 8 2 7.77614 2 7.5C2 7.22386 2.22386 7 2.5 7H11.2929L8.14645 3.85355C7.95118 3.65829 7.95118 3.34171 8.14645 3.14645Z"
+                                            fill="currentColor" fill-rule="evenodd" clip-rule="evenodd"></path>
+                                    </svg>
+                                </a>
+                            </li>
+                            <!--end folio-list__item -->
+
+                            <li class="folio-list__item column" data-animate-el>
+                                <a class="folio-list__item-link" href="#modal-06">
+                                    <div class="folio-list__item-pic">
+                                        <img src="https://i.imgur.com/IkZzrjN.jpg"
+                                            srcset="https://i.imgur.com/IkZzrjN.jpg 1x, https://i.imgur.com/IkZzrjN.jpg 2x"
+                                            alt="">
+                                    </div>
+
+                                    <div class="folio-list__item-text">
+                                        <div class="folio-list__item-cat">
+                                            Music Composition (Remix)
+                                        </div>
+                                        <div class="folio-list__item-title">
+                                            Gold (Stupid Love)
+                                        </div>
+                                    </div>
+                                </a>
+                                <a class="folio-list__proj-link" href="#" title="project link">
+                                    <svg width="15" height="15" viewBox="0 0 15 15" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M8.14645 3.14645C8.34171 2.95118 8.65829 2.95118 8.85355 3.14645L12.8536 7.14645C13.0488 7.34171 13.0488 7.65829 12.8536 7.85355L8.85355 11.8536C8.65829 12.0488 8.34171 12.0488 8.14645 11.8536C7.95118 11.6583 7.95118 11.3417 8.14645 11.1464L11.2929 8H2.5C2.22386 8 2 7.77614 2 7.5C2 7.22386 2.22386 7 2.5 7H11.2929L8.14645 3.85355C7.95118 3.65829 7.95118 3.34171 8.14645 3.14645Z"
+                                            fill="currentColor" fill-rule="evenodd" clip-rule="evenodd"></path>
+                                    </svg>
+                                </a>
+                            </li>
+                            <!--end folio-list__item -->
+
+                        </ul> <!-- end folio-list -->
+
+                    </div> <!-- end column -->
+                    <!-- <section id="works" class="s-works target-section">
+                <div class="row works-portfolio">
+                    <div class="column lg-12" data-animate-block>
+                        <h2 class="text-pretitle" data-animate-el>
+                            Recent Works
+                        </h2>
+                        <p class="h1" data-animate-el>
+                            Here are some of my recent projects. Feel free to check them out!
+                        </p>
+                        <ul class="folio-list row block-lg-one-half block-stack-on-1000">
+                            <li class="folio-list__item column" data-animate-el>
+                                <a class="folio-list__item-link" href="#modal-01">
+                                    <div class="folio-list__item-pic">
+                                        <img src="./images/resume1.jpg"
+                                            srcset="images/resume1.jpg 1x, images/resume1.jpg 2x" alt="">
+                                    </div>
+
+                                    <div class="folio-list__item-text">
+                                        <div class="folio-list__item-cat">
+                                            First website ever
+                                        </div>
+                                        <div class="folio-list__item-title">
+                                            Memerator <strong>Deluxe</strong>
+                                        </div>
+                                    </div>
+                                </a>
+                                <a class="folio-list__proj-link" href="https://memerator-deluxe.herokuapp.com"
+                                    title="project link">
+                                    <svg width="15" height="15" viewBox="0 0 15 15" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M8.14645 3.14645C8.34171 2.95118 8.65829 2.95118 8.85355 3.14645L12.8536 7.14645C13.0488 7.34171 13.0488 7.65829 12.8536 7.85355L8.85355 11.8536C8.65829 12.0488 8.34171 12.0488 8.14645 11.8536C7.95118 11.6583 7.95118 11.3417 8.14645 11.1464L11.2929 8H2.5C2.22386 8 2 7.77614 2 7.5C2 7.22386 2.22386 7 2.5 7H11.2929L8.14645 3.85355C7.95118 3.65829 7.95118 3.34171 8.14645 3.14645Z"
+                                            fill="currentColor" fill-rule="evenodd" clip-rule="evenodd"></path>
+                                    </svg>
+                                </a>
+                            </li> -->
+
+                    <!-- end item 1 -->
+
+                    <!-- <li class="folio-list__item column" data-animate-el>
+                                <a class="folio-list__item-link" href="#modal-02">
+                                    <div class="folio-list__item-pic">
+                                        <img src="https://i.imgur.com/ztFIM0o.jpg"
+                                            srcset="https://i.imgur.com/ztFIM0o.jpg 1x, https://i.imgur.com/ztFIM0o.jpg 2x"
+                                            alt="tunage-splash-page">
+                                    </div>
+
+                                    <div class="folio-list__item-text">
+                                        <div class="folio-list__item-cat">
+                                            Class Project
+                                        </div>
+                                        <div class="folio-list__item-title">
+                                            TUNEage
+                                        </div>
+                                    </div>
+                                </a>
+                                <a class="folio-list__proj-link" href="https://drum-rack2.herokuapp.com"
+                                    title="drum-rack">
+                                    <svg width="15" height="15" viewBox="0 0 15 15" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M8.14645 3.14645C8.34171 2.95118 8.65829 2.95118 8.85355 3.14645L12.8536 7.14645C13.0488 7.34171 13.0488 7.65829 12.8536 7.85355L8.85355 11.8536C8.65829 12.0488 8.34171 12.0488 8.14645 11.8536C7.95118 11.6583 7.95118 11.3417 8.14645 11.1464L11.2929 8H2.5C2.22386 8 2 7.77614 2 7.5C2 7.22386 2.22386 7 2.5 7H11.2929L8.14645 3.85355C7.95118 3.65829 7.95118 3.34171 8.14645 3.14645Z"
+                                            fill="currentColor" fill-rule="evenodd" clip-rule="evenodd"></path>
+                                    </svg>
+                                </a>
+                            </li> -->
+                    <!--end folio-list__item -->
+                    <!-- <li class="folio-list__item column" data-animate-el>
+                                <a class="folio-list__item-link" href="#modal-03">
+                                    <div class="folio-list__item-pic">
+                                        <img src="https://i.imgur.com/IkZzrjN.jpg"
+                                            srcset="https://i.imgur.com/IkZzrjN.jpg 1x, https://i.imgur.com/IkZzrjN.jpg 2x"
+                                            alt="">
+                                    </div>
+
+                                    <div class="folio-list__item-text">
+                                        <div class="folio-list__item-cat">
+                                            Song Remix
+                                        </div>
+                                        <div class="folio-list__item-title">
+                                            "Gold (Stupid Love)"
+                                        </div>
+                                    </div>
+                                </a>
+                                <a class="folio-list__proj-link" href="https://www.youtube.com/watch?v=O1SofodW1uw"
+                                    title="Song with lyric video">
+                                    <svg width="15" height="15" viewBox="0 0 15 15" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M8.14645 3.14645C8.34171 2.95118 8.65829 2.95118 8.85355 3.14645L12.8536 7.14645C13.0488 7.34171 13.0488 7.65829 12.8536 7.85355L8.85355 11.8536C8.65829 12.0488 8.34171 12.0488 8.14645 11.8536C7.95118 11.6583 7.95118 11.3417 8.14645 11.1464L11.2929 8H2.5C2.22386 8 2 7.77614 2 7.5C2 7.22386 2.22386 7 2.5 7H11.2929L8.14645 3.85355C7.95118 3.65829 7.95118 3.34171 8.14645 3.14645Z"
+                                            fill="currentColor" fill-rule="evenodd" clip-rule="evenodd"></path>
+                                    </svg>
+                                </a>
+                            </li> -->
+
+
+                    <!-- <li class="folio-list__item column" data-animate-el>
+                                <a class="folio-list__item-link" href="#modal-04">
+                                    <div class="folio-list__item-pic">
+                                        <img src="./images/sinlogo.jpg"
+                                            srcset="images/sinlogo.jpg 1x, images/sinlogo.jpg 2x" alt="sinnik-logo">
+                                    </div>
+
+                                    <div class="folio-list__item-text">
+                                        <div class="folio-list__item-cat">
+                                            Branding: Logo
+                                        </div>
+                                        <div class="folio-list__item-title">
+                                            SINNIK
+                                        </div>
+                                    </div>
+                                </a>
+                                <a class="folio-list__proj-link" href="https://sinnik-gallery.herokuapp.com"
+                                    title="project link">
+                                    <svg width="15" height="15" viewBox="0 0 15 15" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M8.14645 3.14645C8.34171 2.95118 8.65829 2.95118 8.85355 3.14645L12.8536 7.14645C13.0488 7.34171 13.0488 7.65829 12.8536 7.85355L8.85355 11.8536C8.65829 12.0488 8.34171 12.0488 8.14645 11.8536C7.95118 11.6583 7.95118 11.3417 8.14645 11.1464L11.2929 8H2.5C2.22386 8 2 7.77614 2 7.5C2 7.22386 2.22386 7 2.5 7H11.2929L8.14645 3.85355C7.95118 3.65829 7.95118 3.34171 8.14645 3.14645Z"
+                                            fill="currentColor" fill-rule="evenodd" clip-rule="evenodd"></path>
+                                    </svg>
+                                </a>
+                            </li> -->
+                    <!-- end folio-list__item -->
+
+
+
+                    <!-- <div class="folio-list__item-text">
+                                <div class="folio-list__item-cat">
+                                    Song Remix
+                                </div>
+                                <div class="folio-list__item-title">
+                                    "Gold (Stupid Love)"
+                                </div>
+                            </div>
+                            </a>
+                            <a class="folio-list__proj-link" href="https://www.youtube.com/watch?v=O1SofodW1uw"
+                                title="Song with lyric video">
+                                <svg width="15" height="15" viewBox="0 0 15 15" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M8.14645 3.14645C8.34171 2.95118 8.65829 2.95118 8.85355 3.14645L12.8536 7.14645C13.0488 7.34171 13.0488 7.65829 12.8536 7.85355L8.85355 11.8536C8.65829 12.0488 8.34171 12.0488 8.14645 11.8536C7.95118 11.6583 7.95118 11.3417 8.14645 11.1464L11.2929 8H2.5C2.22386 8 2 7.77614 2 7.5C2 7.22386 2.22386 7 2.5 7H11.2929L8.14645 3.85355C7.95118 3.65829 7.95118 3.34171 8.14645 3.14645Z"
+                                        fill="currentColor" fill-rule="evenodd" clip-rule="evenodd"></path>
+                                </svg>
+                            </a>
+                            </li> -->
+                    <!-- <li class="folio-list__item column" data-animate-el>
+                                <a class="folio-list__item-link" href="#modal-05">
+                                    <div class="folio-list__item-pic">
+                                        <img src="images/portfolio/sanddunes.jpg"
+                                            srcset="images/portfolio/sanddunes.jpg 1x, images/portfolio/sanddunes@2x.jpg 2x"
+                                            alt="">
+                                    </div>
+
+                                    <div class="folio-list__item-text">
+                                        <div class="folio-list__item-cat">
+                                            Illustration
+                                        </div>
+                                        <div class="folio-list__item-title">
+                                            Sand Dunes.
+                                        </div>
+                                    </div>
+                                </a>
+                                <a class="folio-list__proj-link" href="#" title="project link">
+                                    <svg width="15" height="15" viewBox="0 0 15 15" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M8.14645 3.14645C8.34171 2.95118 8.65829 2.95118 8.85355 3.14645L12.8536 7.14645C13.0488 7.34171 13.0488 7.65829 12.8536 7.85355L8.85355 11.8536C8.65829 12.0488 8.34171 12.0488 8.14645 11.8536C7.95118 11.6583 7.95118 11.3417 8.14645 11.1464L11.2929 8H2.5C2.22386 8 2 7.77614 2 7.5C2 7.22386 2.22386 7 2.5 7H11.2929L8.14645 3.85355C7.95118 3.65829 7.95118 3.34171 8.14645 3.14645Z"
+                                            fill="currentColor" fill-rule="evenodd" clip-rule="evenodd"></path>
+                                    </svg>
+                                </a>
+                            </li> -->
+                    <!--end folio-list__item -->
+
+                    <!-- <li class="folio-list__item column" data-animate-el>
+                                <a class="folio-list__item-link" href="#modal-06">
+                                    <div class="folio-list__item-pic">
+                                        <img src="images/portfolio/minimalismo.jpg"
+                                            srcset="images/portfolio/minimalismo.jpg 1x, images/portfolio/minimalismo@2x.jpg 2x"
+                                            alt="">
+                                    </div>
+
+                                    <div class="folio-list__item-text">
+                                        <div class="folio-list__item-cat">
+                                            Branding
+                                        </div>
+                                        <div class="folio-list__item-title">
+                                            Minimalismo.
+                                        </div>
+                                    </div>
+                                </a>
+                                <a class="folio-list__proj-link" href="#" title="project link">
+                                    <svg width="15" height="15" viewBox="0 0 15 15" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M8.14645 3.14645C8.34171 2.95118 8.65829 2.95118 8.85355 3.14645L12.8536 7.14645C13.0488 7.34171 13.0488 7.65829 12.8536 7.85355L8.85355 11.8536C8.65829 12.0488 8.34171 12.0488 8.14645 11.8536C7.95118 11.6583 7.95118 11.3417 8.14645 11.1464L11.2929 8H2.5C2.22386 8 2 7.77614 2 7.5C2 7.22386 2.22386 7 2.5 7H11.2929L8.14645 3.85355C7.95118 3.65829 7.95118 3.34171 8.14645 3.14645Z"
+                                            fill="currentColor" fill-rule="evenodd" clip-rule="evenodd"></path>
+                                    </svg>
+                                </a>
+                            </li>  -->
+                    <!--end folio-list__item -->
+
+                    <!-- </ul> end folio-list -->
+
+                    <!-- </div> end column -->
+
+
+
+                    <!-- --------------------------------------------
+                    Modal Templates Popup
+                    --------------------------------------------  -->
+
+                    <div id="modal-01" hidden>
+                        <div class="modal-popup">
+                            <img src="images/resume1.jpg" alt="meme">
+
+                            <div class="modal-popup__desc">
+                                <h5>First React App</h5>
+                                <p>This was officially my first published site of all time. A simple React app, this
+                                    project was about one month into my coding journey. On the project, we were required
+                                    to make an app that utilized a free API and used its data creatively. React was not
+                                    required but encouraged. It was quite the (frustrating!) but eye opening and
+                                    necessary part of my coding journey!</p>
+                                <ul class="modal-popup__cat">
+                                    <li>React</li>
+                                    <li>API</li>
+                                </ul>
+                            </div>
+
+                            <a href="https://memerator-deluxe.herokuapp.com" class="modal-popup__details">Project
+                                link</a>
+                        </div>
+                    </div> <!-- end modal -->
+
+                    <div id="modal-02" hidden>
+                        <div class="modal-popup">
+                            <img src="images/BACKGR.jpg" alt="">
+
+                            <div class="modal-popup__desc">
+                                <h5>TUNEage</h5>
+                                <p>This full stack web app (complete with front and backend, as well as a Django
+                                    database), was my attempt at an all-in-one app solution for modern musicians on the
+                                    go. Although all features are still under development, the app features: A
+                                    user-generated artist database; a lyrics archive similar to Genius; a browser
+                                    compatible 'digital audio workstation', with fully-functioning 'drum rack' and
+                                    'piano
+                                    roll', as well as a native media player that overlays lyrics onscreen!</p>
+                                <ul class="modal-popup__cat">
+                                    <li>Full-Stack</li>
+                                    <li>Frontend</li>
+                                    <li>Backend</li>
+                                    <li>MongoDB</li>
+                                </ul>
+                            </div>
+
+                            <a href="https://www.drum-rack2.herokuapp.com" class="modal-popup__details">Drum Module</a>
+                        </div>
+                    </div> <!-- end modal -->
+
+                    <div id="modal-03" hidden>
+                        <div class="modal-popup">
+                            <img src="./images/articlr.jpg" alt="">
+
+                            <div class="modal-popup__desc">
+                                <h5>Articlr</h5>
+                                <p>For our first (and only) group project, we contructed our first full stack website!
+                                    We decided on making a blog/social media type site, and in the end it was fully
+                                    functional, with user credentials and real-time post updates! (Unfortunately, the
+                                    original server is down as it belonged to a classmate, but the project repo remains,
+                                    click 'project link' above to access project reository).</p>
+                                <ul class="modal-popup__cat">
+                                    <li>in class - team</li>
+                                </ul>
+                            </div>
+
+                            <a href="https://github.com/filipeqm94/Blog-Website" class="modal-popup__details">Project
+                                Repo</a>
+                        </div>
+                    </div> <!-- end modal -->
+
+                    <div id="modal-04" hidden>
+                        <div class="modal-popup">
+                            <img src="./images/sinnik-gold.jpg" alt="">
+
+                            <div class="modal-popup__desc">
+                                <h5>Mockup Gallery</h5>
+                                <p>A display of the variety of logo styles and possibilities built from the same
+                                    base-logo structure (.psd smart object). View the gallery above!</p>
+                                <ul class="modal-popup__cat">
+                                    <li>React</li>
+                                    <li>React-Gallery</li>
+                                    <li>Photoshop</li>
+                                </ul>
+                            </div>
+
+                            <a href="https://sinnik-gallery.herokuapp.com" class="modal-popup__details">View React
+                                Gallery</a>
+                        </div>
+                    </div> <!-- end modal -->
+
+                    <div id="modal-05" hidden>
+                        <div class="modal-popup">
+
+                            <img src="./images/thumb3.png" alt="thumb">
+
+                            <div class="modal-popup__desc">
+                                <h5>Who Wants to be a Trillionaire?</h5>
+                                <p>Another project from very early on, this basic quiz website was an exploration of
+                                    Javascript and the basics of React.js. Take the quiz IF YOU DARE! (link above^)</p>
+                                <ul class="modal-popup__cat">
+                                    <li>Online Quiz</li>
+                                </ul>
+                            </div>
+
+                            <a href="https://pages.git.generalassemb.ly/yusefabucar/Project_ONE/"
+                                class="modal-popup__details">Project link</a>
+                        </div>
+                    </div> <!-- end modal -->
+
+                    <div id="modal-06" hidden>
+                        <div class="modal-popup">
+                            <img src="https://i.imgur.com/IkZzrjN.jpg" alt="">
+
+                            <div class="modal-popup__desc">
+                                <h5>"Gold (Stupid Love" Remix</h5>
+                                <p>I'm pretty proud of this song, even though the view counts weren't initially
+                                    spectacular. I
+                                    used a homemmade acapella track of the woman's voice, and created the entire
+                                    layered instrumental track, mixed and mastered it, and edited the lyric music video
+                                    to fit in sync with the words. Made with Ableton Live Suite and Adobe Premier Pro.
+                                </p>
+                                <ul class="modal-popup__cat">
+                                    <li>Song</li>
+                                    <li>Remix</li>
+                                    <li>Ableton</li>
+                                </ul>
+                            </div>
+
+                            <a href="https://www.youtube.com/watch?v=O1SofodW1uw" class="modal-popup__details">Lyric
+                                Music Video</a>
+                        </div>
+                    </div> <!-- end modal -->
+
+                </div> <!-- end works-portfolio -->
+
+                <section id="testimonials" class="s-testimonials target-section">
+
+                    <!-- <div class="row intro-content wide"> -->
+
+                    <!-- <div class="column"> -->
+                    <div class="text-pretitle with-line text-center" data-animate-block>
+                        Testimonials<br><small>Swipe right for more!</small>
+                    </div>
+                    <div class="row testimonials">
+                        <div class="column lg-12" data-animate-block>
+
+                            <div class="swiper-container testimonial-slider" data-animate-el>
+
+                                <div class="swiper-wrapper">
+
+                                    <div class="testimonial-slider__slide swiper-slide">
+                                        <div class="testimonial-slider__author">
+                                            <img src="images/avatars/tj1.jpeg" alt="Author image"
+                                                class="testimonial-slider__avatar">
+                                            <cite class="testimonial-slider__cite">
+                                                <strong>Thomas James Kirk</strong>
+                                                <span>Famous YouTuber</span>
+                                            </cite>
+                                        </div>
+                                        <p>
+                                            "He's a character, for sure."
+                                        </p>
+                                    </div> <!-- end testimonial-slider__slide -->
+
+                                    <div class="testimonial-slider__slide swiper-slide">
+                                        <div class="testimonial-slider__author">
+                                            <img src="images/avatars/user-b.jpg" alt="Author image"
+                                                class="testimonial-slider__avatar">
+                                            <cite class="testimonial-slider__cite">
+                                                <strong>Brittnee Wright</strong>
+                                                <span>Free Spirit</span>
+                                            </cite>
+                                        </div>
+                                        <p>
+                                            "He's one of the realest people I've ever known. A true friend 'till the
+                                            end."
+                                        </p>
+                                    </div> <!-- end testimonial-slider__slide -->
+
+                                    <div class="testimonial-slider__slide swiper-slide">
+                                        <div class="testimonial-slider__author">
+                                            <img src="images/avatars/user-ant.jpg" alt="Author image"
+                                                class="testimonial-slider__avatar">
+                                            <cite class="testimonial-slider__cite">
+                                                <strong>Antoine Clark</strong>
+                                                <span>Professional Conductor, Wheeling Symphony Orchestra</span>
+                                            </cite>
+                                        </div>
+                                        <p>
+                                            "Extremely professional. Highly creative. A bit unorthodox, but
+                                            well-balanced. A
+                                            treat to work with."
+                                        </p>
+                                    </div>
+
+
+                                    <div class="testimonial-slider__slide swiper-slide">
+                                        <div class="testimonial-slider__author">
+                                            <img src="https://yt3.ggpht.com/a/AATXAJw_JCoQbmjn9dFYTv8MH4UvFdAdZXzjAQ35YA=s900-c-k-c0xffffffff-no-rj-mo"
+                                                alt="Author image" class="testimonial-slider__avatar">
+                                            <cite class="testimonial-slider__cite">
+                                                <strong>Rick Sanchez</strong>
+                                                <span>"The Smartest Man in the Universe"</span>
+                                            </cite>
+                                        </div>
+                                        <p>
+                                            He exists.
+                                        </p>
+                                        <!-- </div> -->
+                                        <!-- <div class="swiper-pagination"></div> -->
+                                    </div> <!-- end testimonial-slider__slide -->
+                                    <div class="swiper-pagination-black"></div>
+                                </div> <!-- end swiper-wrapper -->
+                            </div>
+                        </div>
+                    </div>
+                </section> <!-- end s-works -->
+                <!-- <div id="modal-01" hidden>
+                        <div class="modal-popup">
+                            <img src="./images/resume1.jpg" alt="memerator-deluxe-ui">
+
+                            <div class="modal-popup__desc">
+                                <h5>Memerator Deluxe</h5>
+                                <p>This was officially my first published site of all time. A simple React app, this
+                                    project was about one month into my coding journey. On the project, we were required
+                                    to make an app that utilized a free API and used its data creatively. React was not
+                                    required but encouraged. It was quite the (frustrating!) but eye opening and
+                                    necessary part of my coding journey!</p>
+                                <ul class="modal-popup__cat">
+                                    <li>React</li>
+                                    <li>API</li>
+                                    <li>Software Engineer</li>
+                                </ul>
+                            </div>
+
+                            <a href="https://memerator-deluxe.herokuapp.com/" class="modal-popup__details">Live
+                                Project</a>
+
+                        </div>
+                    </div> -->
+
+
+                <!-- end modal -->
+
+                <!-- <div id="modal-02" hidden>
+                        <div class="modal-popup">
+                            <img src="https://i.imgur.com/ztFIM0o.jpg" alt="">
+
+                            <div class="modal-popup__desc">
+                                <h5>Class Project - TUNEage</h5>
+                                <p>This full stack web app (complete with front and backend, as well as a Django
+                                    database), was my attempt at an all-in-one app solution for modern musicians on the
+                                    go. Although all features are still under development, the app features: A
+                                    user-generated artist database; a lyrics archive similar to Genius; a browser
+                                    compatible 'digital audio workstation', with fully funtioning 'drum rack' and 'piano
+                                    roll', and a native media player that displays lyrics onscreen in real-time.</p>
+                                <ul class="modal-popup__cat">
+                                    <li>React.js</li>
+                                    <li>Full-stack Web Apps</li>
+                                    <li>Software Engineer</li>
+                                </ul>
+                            </div> -->
+
+                <!-- <a href="https://drum-rack2.herokuapp.com/" class="modal-popup__details">Drum Rack
+                                Module</a> -->
+
+                <!-- </div>
+                    </div> -->
+                <!-- end modal -->
+                <!-- <div id="modal-03" hidden>
+                        <div class="modal-popup">
+                            <img src="https://i.imgur.com/IkZzrjN.jpg" alt="">
+
+                            <div class="modal-popup__desc">
+                                <h5>Song Remix - "Gold (Stupid Love)"</h5>
+                                <p>I'm pretty proud of this song, even though the views weren't initially spectacular. I
+                                    used a homemmade acapella track of the woman's singing voice, and created the entire
+                                    layered instrumental track, mixed and mastered it, and edited the lyric music video
+                                    to fit in sync with the words. Enjoy!</p>
+                                <ul class="modal-popup__cat">
+                                    <li>React.js</li>
+                                    <li>Full-stack Web Apps</li>
+                                    <li>Software Engineer</li>
+                                </ul>
+                            </div>
+
+                            <a href="https://drum-rack2.herokuapp.com/" class="modal-popup__details">Drum Rack
+                                Module</a>
+
+                        </div>
+                    </div> -->
+
+                <!-- TESTIMONIALS -->
+                <!-- <h2 class="text-pretitle with-line" data-animate-el> -->
+                <!-- Testimonials -->
+                <!-- </h2> -->
+                <!-- <section id="testimonials" class="s-testimonials target-section"> -->
+                <!-- <div class="row testimonials">
+                        <div class="column lg-12" data-animate-block>
+                            <div class="swiper-container testimonial-slider" data-animate-el>
+                                <div class="swiper-wrapper">
+
+                                    <div class="testimonial-slider__slide swiper-slide">
+                                        <div class="testimonial-slider__author">
+
+
+                                            <img src="./images/avatars/tj1.jpeg" alt="Author image"
+                                                class="testimonial-slider__avatar">
+                                            <cite class="testimonial-slider__cite">
+                                                <strong>Thomas James Kirk</strong>
+                                                <span>YouTube Personality</span>
+                                            </cite>
+                                        </div>
+                                        <p>
+                                            He's alright I guess. -->
+                <!-- </p> -->
+                <!-- </div> end testimonial-slider__slide -->
+
+                <!-- <div class="testimonial-slider__slide swiper-slide">
+                                        <div class="testimonial-slider__author">
+                                            <img src="./images/avatars/user-b.jpg" alt="Author image"
+                                                class="testimonial-slider__avatar">
+                                            <cite class="testimonial-slider__cite">
+                                                <strong>Brittnee Wright</strong>
+                                                <span>Small businesss owner, Wright Designs</span>
+                                            </cite>
+                                        </div>
+                                        <p>
+                                            "He is the coolest person I've ever met, a true friend."
+                                        </p>
+                                    </div>
+
+
+
+                                    <div class="testimonial-slider__slide swiper-slide">
+                                        <div class="testimonial-slider__author">
+                                            <img src="https://yt3.ggpht.com/a/AATXAJyRGAM8AgRWKVwk_w-B8NUOLYWRyhJEBwvv0A=s900-c-k-c0xffffffff-no-rj-mo"
+                                                alt="Author image" class="testimonial-slider__avatar">
+                                            <cite class="testimonial-slider__cite">
+                                                <strong>Rick Sanchez</strong>
+                                                <span>The Smartest Man in the Multiverse</span>
+                                            </cite>
+                                        </div>
+                                        <p>
+                                            “Sometimes science is a lot more art than science. A lot of people don't get
+                                            that.""
+                                        </p>
+                                    </div>
+                                    <div class="testimonial-slider__slide swiper-slide">
+                                        <div class="testimonial-slider__author">
+                                            <img src="images/avatars/user-01.jpg" alt="Author image"
+                                                class="testimonial-slider__avatar">
+                                            <cite class="testimonial-slider__cite">
+                                                <strong>Satya Nadella</strong>
+                                                <span>CEO, Microsoft</span>
+                                            </cite>
+                                        </div>
+                                        <p>
+                                            Repellat dignissimos libero. Qui sed at corrupti expedita voluptas odit.
+                                            Nihil
+                                            ea quia nesciunt. Ducimus aut sed ipsam.
+                                            Autem eaque officia cum exercitationem sunt voluptatum accusamus. Quasi
+                                            voluptas
+                                            eius distinctio.
+                                            Voluptatem dignissimos ut.
+                                        </p>
+                                    </div>
+
+                                    <div class="testimonial-slider__slide swiper-slide">
+                                        <div class="testimonial-slider__author">
+                                            <img src="images/avatars/user-06.jpg" alt="Author image"
+                                                class="testimonial-slider__avatar">
+                                            <cite class="testimonial-slider__cite">
+                                                <strong>Jeff Bezos</strong>
+                                                <span>CEO, Amazon</span>
+                                            </cite>
+                                        </div>
+                                        <p>
+                                            Nunc interdum lacus sit amet orci. Vestibulum dapibus nunc ac augue. Fusce
+                                            vel
+                                            dui. In ac felis
+                                            quis tortor malesuada pretium. Curabitur vestibulum aliquam leo. Qui sed at
+                                            corrupti expedita voluptas odit.
+                                            Nihil ea quia nesciunt. Ducimus aut sed ipsam.
+                                        </p>
+
+
+                                    </div> end swiper-wrapper -->
+
+                <!-- </div> -->
+
+
+                <!-- </div> end swiper-container -->
+
+                <!-- </div> end column -->
+                <!-- </div> end row testimonials -->
+
+
+
+
+                <!-- ### contact
+            ================================================== -->
+                <section id="contact" class="s-contact target-section">
+
+                    <div class="row contact-top">
+                        <div class="column lg-12">
+                            <h2 class="text-pretitle">
+                                Hit me up
+                            </h2>
+
+                            <p class="h1">
+                                I'd love to hear from you, so
+                                whether you have a question, or just
+                                want to chat about design, coding, music, or whatever — shoot me a message!
+                            </p>
+                        </div>
+                    </div> <!-- end contact-top -->
+
+                    <div class="row contact-bottom">
+                        <div class="column lg-3 md-5 tab-6 stack-on-550 contact-block">
+                            <h3 class="text-pretitle">You can reach me at</h3>
+                            <p class="contact-links">
+                                <a href="mailto:yusefabucar@gmail.com" class="mailtoui">yusefabucar@gmail.com</a> <br>
+                                <a href="tel:+16143538712">+614 353 8712</a>
+                            </p>
+                        </div>
+                        <div class="column lg-4 md-5 tab-6 stack-on-550 contact-block">
+                            <h3 className="text-pretitle">Social</h3>
+                            <ul class="contact-social">
+                                <li><i className="fab fa-soundcloud"><a href="https://soundcloud.com/lanaremix">Soundcloud</a></i>
+                                </li>
+                                <li><i className="fab fa-facebook"></i><a
+                                        href="https://facebook.com/yabucar">Facebook</a></li>
+                                <li><i className="fab fa-linkedin"></i><a
+                                        href="https://linkedin.com/in/yusefabucar">LinkedIn</a></li>
+                                <li><i className="fab fa-github"></i><a href="https://github.com/yusefabucar">GitHub</a>
+                                </li>
+                                <li><i className="fab fa-instagram"></i><a
+                                        href="https://www.instagram.com/official_cynicalproductions">Instagram</a></li>
+                                <li><i className="fab fa-gmail"></i><a href="mailto:yusefabucar@gmail.com">Gmail</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div className="column lg-4 md-12 contact-block">
+                            <a href="mailto:yusefabucar@gmail.com"
+                                className="mailtoui btn btn--medium u-fullwidth contact-btn">Say
+                                Hey!</a>
+                        </div>
+                    </div> <!-- end contact-bottom -->
+
+                </section> <!-- end contact -->
+
+        </main> <!-- end s-content -->
+
+
+        <!-- ## footer
+        ================================================== -->
+        <footer class="s-footer">
+
+            <div class="row">
+                <div class="column ss-copyright">
+                    <span>© Copyright Cynical Productions 2022</span>
+
+                </div>
+
+                <div class="ss-go-top">
+                    <a class="smoothscroll" title="Back to Top" href="#top">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill-rule="evenodd"
+                            clip-rule="evenodd">
+                            <path
+                                d="M11 2.206l-6.235 7.528-.765-.645 7.521-9 7.479 9-.764.646-6.236-7.53v21.884h-1v-21.883z" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+
+        </footer> <!-- end s-footer -->
+
+    </div> <!-- end -s-pagewrap -->
+
+
+    <!-- Java Script
+    ================================================== -->
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>
+
+</body>
+
 </html>
